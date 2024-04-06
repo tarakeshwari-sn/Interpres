@@ -1,4 +1,6 @@
 # Interpres
 Interpres is a python application designed using Tkinter and GoogleTrans for translation of text and files into a selection of about 108 languages.
 
-Note: You need to change the locaion of the files according to your location.
+Note: Before running the code ,install GoogleTrans module by typing pip instsll googletrans in command prompt.
+
+You need to change the location of the files according to your location.
