@@ -29,12 +29,12 @@ def Home():
     home=Toplevel()
     home.geometry("500x500")
     home.title('Interpres')
-    home.iconbitmap("icon.ico")
+    home.iconbitmap("assets/icon.ico")
     home.resizable(False,False)
     
     #Background of home page
     C = Canvas(home,width=500,height=500,borderwidth=0,bd=0 )
-    Pic=PhotoImage(file="A1.png")
+    Pic=PhotoImage(file="assets\A1.png")
     C.create_image(0,1,anchor=NW,image=Pic)
     C.pack(expand=YES,fill=BOTH)
 
@@ -70,7 +70,7 @@ def transtext():
 
     #Background of pg1
     C1 = Canvas(pg1,width=W1, height=H1,borderwidth=0,bd=0 )
-    Pic1= PhotoImage(file="B1.png")
+    Pic1= PhotoImage(file="assets/B1.png")
     C1.create_image(0,1,anchor=NW,image=Pic1)
     C1.pack(expand=YES, fill=BOTH)
 
@@ -149,7 +149,7 @@ def transfile():
     
     #Background of pg2
     C2 = tk.Canvas(pg2,width=600, height=600,borderwidth=0,bd=0 )
-    pic2=PhotoImage(file="C1.png")
+    pic2=PhotoImage(file="assets/C1.png")
     C2.create_image(0,1,anchor=NW,image=pic2)
     C2.pack(expand=YES, fill=BOTH)
 
