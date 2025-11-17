@@ -34,7 +34,7 @@ def Home():
     
     #Background of home page
     C = Canvas(home,width=500,height=500,borderwidth=0,bd=0 )
-    Pic=PhotoImage(file="assets\A1.png")
+    Pic=PhotoImage(file=r"assets\A1.png")
     C.create_image(0,1,anchor=NW,image=Pic)
     C.pack(expand=YES,fill=BOTH)
 
@@ -65,12 +65,12 @@ def transtext():
     W1, H1= pg1.winfo_screenwidth(), pg1.winfo_screenheight()
     pg1.geometry("%dx%d+0+0" % (W1, H1))
     pg1.title('Interpres')
-    pg1.iconbitmap("icon.ico")
+    pg1.iconbitmap("assets/icon.ico")
     pg1.resizable(True,True)
 
     #Background of pg1
     C1 = Canvas(pg1,width=W1, height=H1,borderwidth=0,bd=0 )
-    Pic1= PhotoImage(file="assets/B1.png")
+    Pic1= PhotoImage(file=r"assets/B1.png")
     C1.create_image(0,1,anchor=NW,image=Pic1)
     C1.pack(expand=YES, fill=BOTH)
 
@@ -144,12 +144,12 @@ def transfile():
     pg2=Toplevel()
     pg2.geometry("600x600")
     pg2.title('Interpres')
-    pg2.iconbitmap("icon.ico")
+    pg2.iconbitmap("assets/icon.ico")
     pg2.resizable(False,False)
     
     #Background of pg2
     C2 = tk.Canvas(pg2,width=600, height=600,borderwidth=0,bd=0 )
-    pic2=PhotoImage(file="assets/C1.png")
+    pic2=PhotoImage(file=r"assets\C1.png")
     C2.create_image(0,1,anchor=NW,image=pic2)
     C2.pack(expand=YES, fill=BOTH)
 
